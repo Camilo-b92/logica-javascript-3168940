@@ -21,22 +21,25 @@ console.log( 5 + 3 ) //8
 
 //Ejercicio 1//
 
-let num1 = Number (prompt('El valor A para la suma es '))
-let num2 = Number (prompt('El valor B para la suma es '))
+let num1 = Number (prompt('El numero 1 para la suma es '))
+let num2 = Number (prompt('El numero 2 para la suma es '))
 let resultado1 = num1 + num2 
-alert ("El resultado de tu suma es " + resultado1)
+//alert ("La suma del numero 1 y el numero 2 es " + resultado1)
 
-let num3 = Number (prompt('El valor A para la resta es '))
-let num4 = Number (prompt('El valor B para la resta es '))
+let num3 = Number (prompt('El numero 3 para la resta es '))
+let num4 = Number (prompt('El numero 4 para la resta es '))
 let resultado2 = num3 - num4
-alert ("El resultado de tu resta es " + resultado2)
+//alert ("La resta del numero 3 y el numero 4 es " + resultado2)
 
-let num5 = Number (prompt('El valor A para la multiplicacion es '))
-let num6 = Number (prompt('El valor B para la multiplicacion es '))
+let num5 = Number (prompt('El numero 5 para la multiplicacion es '))
+let num6 = Number (prompt('El numero 6 para la multiplicacion es '))
 let resultado3 = num5 * num6
-alert ("El resultado de tu multiplicacion es " + resultado3)
+//alert ("La multiplicacion del numero 5 y el numero 6 es " + resultado3)
 
-let num7 = Number (prompt('El valor A para la division es '))
-let num8 = Number (prompt('El valor B para la division es '))
+let num7 = Number (prompt('El numero 7 para la division es '))
+let num8 = Number (prompt('El numero 8 para la division es '))
 let resultado4 = num7 / num8
-alert ("El resultado de tu division es " + resultado4)
+//alert ("La division del numero 7 y el numero 8 es " + resultado4) 
+
+
+console.log(`Tu numero es ${num1}`)
