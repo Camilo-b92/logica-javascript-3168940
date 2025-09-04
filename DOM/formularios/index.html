@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize Screen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Customize Screen</h1>
+    <form>
+      <!-- Nombre -->
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Escribe tu nombre">
+
+      <!-- Color -->
+      <label for="color">Color:</label>
+      <select id="color" name="color">
+        <option value="">Selecciona un color</option>
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+        <option value="black">Negro</option>
+      </select>
+
+      <!-- Equipo -->
+      <fieldset>
+        <legend>Equipo:</legend>
+        <label>
+          <input type="radio" name="team" value="gatos"> Gatos
+        </label>
+        <label>
+          <input type="radio" name="team" value="mapaches"> Mapaches
+        </label>
+        <label>
+          <input type="radio" name="team" value="perros"> Perros
+        </label>
+      </fieldset>
+
+      <!-- Botón -->
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
