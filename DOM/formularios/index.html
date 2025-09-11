@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customize Screen</title>
+  <script src="app.js" defer></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Formulario -->
   <div class="form-container">
-    <h1>Customize Screen</h1>
+    <h1>Inicio de Sesión</h1>
     <form>
       <!-- Nombre -->
       <label for="name">Nombre:</label>
@@ -17,7 +19,7 @@
       <!-- Color -->
       <label for="color">Color:</label>
       <select id="color" name="color">
-        <option value="">Selecciona un color</option>
+        <option value="" disabled selected>Selecciona un color</option>
         <option value="red">Rojo</option>
         <option value="blue">Azul</option>
         <option value="green">Verde</option>
@@ -41,6 +43,16 @@
       <!-- Botón -->
       <button type="submit">Enviar</button>
     </form>
+  </div>
+
+  <!-- Página de usuario -->
+  <div class="userPage">
+    <img class="img-equipo" src="" alt="Equipo elegido">
+    <h1 class="text-saludo">Hola Usuario</h1>
+    <p>Perteneces al equipo <span class="text-equipo">...</span></p>
+
+    <!-- Botón de cerrar sesión -->
+    <button class="logout-btn">Cerrar sesión</button>
   </div>
 </body>
 </html>
