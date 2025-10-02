@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HELIKÓN — Narrativa interactiva</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="HELIKÓN — Inicio">
+        <img src="helikon.PNG" alt="Logo HELIKÓN" class="logo-img" />
+      </a>
+
+      <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Quiénes somos</a></li>
+          <li><a href="#team">Equipo</a></li>
+          <li><a href="#project">Proyecto</a></li>
+          <li><a href="#identity">Identidad</a></li>
+          <li><a href="#chapters">Capítulos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-layer left"></div>
+    <div class="hero-layer right"></div>
+
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <h1>HELIKÓN</h1>
+        <p class="lead">
+          Narrativa interactiva que honra la música, la tradición y el legado cultural.
+        </p>
+        <p class="kicker">
+          Cómic transmedia · Investigación · Diseño · Educación
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#project">Ver proyecto</a>
+          <a class="btn btn-ghost" href="#chapters">Explorar capítulos</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="hero-art.PNG" alt="Ilustración Helikón" class="hero-img" />
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#about" aria-hidden="true">↓</a>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="about" class="panel panel-split">
+    <div class="container split">
+      <div class="split-left reveal">
+        <h2>Quiénes somos</h2>
+        <p class="muted">
+          HELIKÓN es un proyecto académico dedicado al desarrollo de productos digitales
+          que combinan investigación, marca y narrativa interactiva.
+        </p>
+        <ul class="bullets">
+          <li>Investigación y documentación</li>
+          <li>Diseño de marca y narrativa</li>
+          <li>Producción de contenidos interactivos</li>
+        </ul>
+      </div>
+
+      <div class="split-right reveal">
+        <div class="visual-placeholder">
+          <img src="about.PNG" alt="Imagen sobre nosotros" class="about-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section id="team" class="panel">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Nuestro equipo</h2>
+        <p class="muted">Detrás de HELIKÓN estamos tres mentes creativas que unen diseño, narrativa e innovación.</p>
+      </div>
+
+      <div class="team-cards reveal">
+        <article class="team-card">
+          <div class="thumb">
+            <img src="gabriel.jpeg" alt="Gabriel Torres" />
+          </div>
+          <div class="card-body">
+            <h3>Gabriel Torres</h3>
+            <p>Dirección creativa</p>
+            <button class="btn btn-outline js-member" data-member="gabriel">Ver más</button>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="thumb">
+            <img src="camilo.jpeg" alt="Camilo Betancourt" />
+          </div>
+          <div class="card-body">
+            <h3>Camilo Betancourt</h3>
+            <p>Investigación y narrativa</p>
+            <button class="btn btn-outline js-member" data-member="camilo">Ver más</button>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="thumb">
+            <img src="brayhan.jpeg" alt="Brayhan Caicedo" />
+          </div>
+          <div class="card-body">
+            <h3>Brayhan Caicedo</h3>
+            <p>Diseño visual</p>
+            <button class="btn btn-outline js-member" data-member="brayhan">Ver más</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTO -->
+  <section id="project" class="panel panel-dark">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>El proyecto: cómic interactivo</h2>
+        <p class="muted">
+          Un cómic transmedia inspirado en Juanes que mezcla música, memoria y tecnología
+          para contar historias con impacto social y educativo.
+        </p>
+      </div>
+
+      <div class="project-carousel reveal">
+        <button class="pc-btn pc-prev" aria-label="Anterior">◀</button>
+
+        <div class="pc-track-wrap">
+          <ul id="projectTrack" class="pc-track">
+            <!-- Moodboard -->
+            <li class="pc-slide">
+              <div class="pc-card">
+                <div class="pc-media">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 16 16">
+                    <rect x="1" y="1" width="6" height="6" fill="#662D1A"/>
+                    <rect x="9" y="1" width="6" height="6" fill="#E1A95F"/>
+                    <rect x="1" y="9" width="6" height="6" fill="#3E3229"/>
+                    <rect x="9" y="9" width="6" height="6" fill="#F2B749"/>
+                  </svg>
+                </div>
+                <div class="pc-body">
+                  <h3>Moodboard</h3>
+                  <p>Referentes gráficos, paleta y atmósfera visual.</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Bocetos -->
+            <li class="pc-slide">
+              <div class="pc-card">
+                <div class="pc-media">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="none" stroke="#F2B749" stroke-width="1.5" viewBox="0 0 24 24">
+                    <circle cx="12" cy="7" r="4"/>
+                    <path d="M4 22c0-4 4-7 8-7s8 3 8 7"/>
+                  </svg>
+                </div>
+                <div class="pc-body">
+                  <h3>Bocetos</h3>
+                  <p>Estudios de personaje e identidad visual.</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Storyboard -->
+            <li class="pc-slide">
+              <div class="pc-card">
+                <div class="pc-media">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 16 16">
+                    <rect x="1" y="2" width="14" height="10" rx="2" ry="2" fill="#F2B749"/>
+                    <path d="M1 6h14M1 10h14" stroke="#111" stroke-width="1.2"/>
+                  </svg>
+                </div>
+                <div class="pc-body">
+                  <h3>Storyboard</h3>
+                  <p>Secuencias interactivas y ritmo narrativo.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="pc-btn pc-next" aria-label="Siguiente">▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTIDAD VISUAL -->
+  <section id="identity" class="panel">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Identidad visual</h2>
+        <p class="muted">Paleta de colores definida en el manual de marca.</p>
+      </div>
+      <div class="colors-grid reveal">
+        <div class="color-block">
+          <h3>Colores principales</h3>
+          <ul>
+            <li style="color:#662D1A;">#662D1A — Tradición, raíces culturales</li>
+            <li style="color:#3E3229;">#3E3229 — Estabilidad y calidez</li>
+            <li style="color:#F2B749;">#F2B749 — Energía y brillo artístico</li>
+            <li style="color:#E1A95F;">#E1A95F — Equilibrio moderno-tradicional</li>
+          </ul>
+        </div>
+        <div class="color-block">
+          <h3>Colores secundarios</h3>
+          <ul>
+            <li style="color:#1A5D66;">#1A5D66 — Estabilidad y frescura</li>
+            <li style="color:#2A6D7A;">#2A6D7A — Serenidad y confianza</li>
+            <li style="color:#09CBBB;">#09CBBB — Dinamismo y modernidad</li>
+            <li style="color:#0B8A3A;">#0B8A3A — Vitalidad y naturaleza</li>
+            <li style="color:#CFE8EB;">#CFE8EB — Claridad y ligereza</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPÍTULOS -->
+<section id="chapters" class="panel panel-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Capítulos del cómic interactivo</h2>
+      <p class="muted">Tres momentos del viaje narrativo — descubrimiento, líricas y solución.</p>
+    </div>
+
+    <div class="chapter-cards reveal">
+      <!-- Capítulo 1 -->
+      <article class="chapter-card">
+        <div class="thumb">
+          <img src="cap1.png" alt="Capítulo 1">
+        </div>
+        <div class="card-body">
+          <h3>Capítulo 1 — El descubrimiento</h3>
+          <p>Juanes encuentra una guitarra en casa, su primer contacto con la música y la enseñanza de su padre.</p>
+          <button class="btn btn-outline js-open" data-chapter="1">Ver más</button>
+        </div>
+      </article>
+
+      <!-- Capítulo 2 -->
+      <article class="chapter-card">
+        <div class="thumb">
+          <img src="cap2.png" alt="Capítulo 2">
+        </div>
+        <div class="card-body">
+          <h3>Capítulo 2 — Las Líricas</h3>
+          <p>Tras la violencia y la pérdida, Juanes compone canciones en medio de tragedias y descubre la maldición de su guitarra.</p>
+          <button class="btn btn-outline js-open" data-chapter="2">Ver más</button>
+        </div>
+      </article>
+
+      <!-- Capítulo 3 -->
+      <article class="chapter-card">
+        <div class="thumb">
+          <img src="cap3.png" alt="Capítulo 3">
+        </div>
+        <div class="card-body">
+          <h3>Capítulo 3 — La solución</h3>
+          <p>Con una canción a su madre, Juanes rompe la maldición y descubre que el amor verdadero lo libera.</p>
+          <button class="btn btn-outline js-open" data-chapter="3">Ver más</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACTO -->
+  <section id="contact" class="panel">
+    <div class="container reveal">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Contacto</h2>
+          <p class="muted">¿Te interesa colaborar, aportar o probar el prototipo? Escríbenos.</p>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:hello@helikon.test">hello@helikon.test</a></li>
+            <li>Proyecto: Cómic interactivo / Transmedia</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            Nombre *
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Correo *
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Mensaje *
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <div id="formFeedback" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="helikon.PNG" alt="Logo HELIKÓN" class="logo-img" />
+      <small>© HELIKÓN — Proyecto formativo. Inspirado en tradición, música y narrativa cultural.</small>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-inner" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- JS externo -->
+  <script src="app.js"></script>
+</body>
+</html>
